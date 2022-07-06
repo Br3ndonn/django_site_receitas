@@ -7,7 +7,7 @@ class ListandoReceitas(admin.ModelAdmin):
     search_fields = ('nome_receita',)
     list_filter = ('categoria',)
     list_editable = ('publicada',)
-    list_per_page = 5
+    list_per_page = 20
 
 admin.site.register(Receita, ListandoReceitas)
 
